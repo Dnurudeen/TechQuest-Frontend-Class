@@ -1,0 +1,252 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+body{
+    font-family: Verdana;
+}
+nav{
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    margin-top: -10px;
+}
+nav img{
+    height: 5rem;
+    padding: 0px 50px;
+}
+nav ul{
+    flex-wrap: wrap;
+    display: flex;
+}
+nav #nav-icons{
+    padding: 0px 50px;
+    margin-top: 20px;
+}
+nav #nav-icons i{
+    font-size: 25px;
+    margin: 0px 5px 0px 5px;
+}
+nav li{
+    justify-content: right;
+    /* float: right; */
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(230, 14, 14);
+    transition: 500ms;
+}
+
+
+/* BANNER */
+#header-banner{
+    /* background-image: url(); */
+    background: linear-gradient(rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0.65)), url(/images/bannerII.jpg);
+    padding: 9rem 3rem;
+    padding-top: 12rem;
+    text-align: center;
+    animation: image 25s infinite alternate-reverse;
+}
+@keyframes image {
+    0%{
+        background: linear-gradient(rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0.65)), url(/images/bannerII.jpg);
+    }
+    50%{
+        background: linear-gradient(rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0.65)), url(/images/banner.jpg);
+    }
+    100%{
+        background: linear-gradient(rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0.65)), url(/images/bannerIII.jpg);
+    }
+}
+#header-banner h1{
+    color: #fff;
+    font-size: 50px;
+}
+#header-banner p{
+    color: #eee;
+    font-size: 20px;
+    display: inline;
+}
+#header-banner hr{
+    width: 10%;
+    margin-bottom: 2rem;
+}
+#header-banner button{
+    padding: 10px 30px;
+    font-size: 17px;
+    font-weight: 500;
+    transform: scale(1);
+    margin: 0px 15px;
+    cursor: pointer;
+}
+#header-banner #lm{
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    border: 2px solid #fff;
+}
+#header-banner button:active{
+    border: 2px solid red;
+}
+#header-banner button:hover{
+    /* padding: 10px 60px; */
+    transform: scale(1.2);
+    transition: 500ms;
+    z-index: 20;
+}
+
+
+/* ABOUT US */
+#about-us{
+    padding: 0px 155px;
+    margin-top: 7rem;
+    margin-bottom: 8rem;
+}
+#about-us #content{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+#about-us #content #item{
+    flex: 0 0 50%;
+    padding: 0px 20px;
+}
+#about-us #content p{
+    text-align: justify;
+}
+#about-us img{
+    width: 100%;
+}
+#about-us #content button{
+    padding: 10px 30px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+#about-us #content button:active{
+    border: 2px solid red;
+}
+
+/* SERVICES */
+#services{
+    padding: 0px 155px;
+    text-align: center;
+    margin-bottom: 7rem;
+}
+#services #work{
+    display: flex;
+}
+#services #work #work-item{
+    background-color: #000;
+    color: #fff;
+    margin: 0px 10px;
+    padding: 25px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* flex: 0 0 29%; */
+}
+#services #work #work-item:hover{
+    background-color: brown;
+    transition: 500ms;
+}
+#services #work #work-item i{
+    font-size: 80px;
+}
+#services h1{
+    display: inline;
+}
+#services hr{
+    margin-bottom: 3rem;
+    width: 5%;
+    border: 2px solid #000;
+}
+#services p{
+    color: rgb(197, 193, 193);
+}
+
+
+/* CONTACT */
+#contact{
+    margin-bottom: 7rem;
+    padding: 0px 155px;
+    text-align: center;
+}
+#contact h1{
+    display: inline;
+}
+#contact hr{
+    margin-bottom: 3rem;
+    width: 5%;
+    border: 2px solid #000;
+}
+#contact #form{
+    text-align: left;
+    display: flex;
+}
+#contact #form #form-item{
+    flex: 0 0 50%;
+    padding: 0px 20px;
+}
+#contact #form #field{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+#contact #form input{
+    width: 98%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+#contact #form input:hover{
+    border: none;
+    border-bottom: 2px solid rgb(200, 34, 34);
+    transition: 500ms;
+}
+#contact #form textarea{
+    width: 100%;
+    margin-top: 7px;
+}
+
+#contact #form fieldset{
+    padding: 20px;
+}
+#contact #form button{
+    padding: 10px 30px;
+    font-size: 17px;
+    font-weight: 500;
+    transform: scale(1);
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+
+/* ABOUT US PAGE */
+#header-banner-about{
+    /* background-image: url(); */
+    background: linear-gradient(rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0.65)), url(/images/bannerIII.jpg);
+    padding: 9rem 3rem;
+    padding-top: 12rem;
+    text-align: center;
+}
+#header-banner-about h1{
+    color: #fff;
+    font-size: 50px;
+    display: inline;
+}
+#header-banner-about hr{
+    width: 10%;
+    margin-bottom: 2rem;
+}

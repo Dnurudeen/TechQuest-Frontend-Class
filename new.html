@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JavaScrict</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <h1 style="color: green;" id="title"><u>PUNISHMENT FOR ABUSING A STAFF</u></h1>
+    <p id="statement"></p>
+    <form action="" name="quiz">
+      <div>
+        <label for="">1) What is my name?</label>
+        <input type="radio" name="q1" value="q1a" id=""> John
+        <input type="radio" name="q1" value="q1b" id=""> Dan
+        <input type="radio" name="q1" value="q1c" id=""> Mike
+      </div>
+
+      <div>
+        <label for="">2) What is my color?</label>
+        <input type="radio" name="q2" value="q2a" id=""> Red
+        <input type="radio" name="q2" value="q2b" id=""> Blue
+        <input type="radio" name="q2" value="q2c" id=""> Yellow
+      </div>
+
+      <div>
+        <label for="">3) What is my age?</label>
+        <input type="radio" name="q3" value="q3a" id=""> 22
+        <input type="radio" name="q3" value="q3b" id=""> 33
+        <input type="radio" name="q3" value="q3c" id=""> 44
+      </div>
+
+      <div>
+        <label for="">4) What is my country?</label>
+        <input type="radio" name="q4" value="q4a" id=""> Nigeria
+        <input type="radio" name="q4" value="q4b" id=""> United Kingdom
+        <input type="radio" name="q4" value="q4c" id=""> Canada
+      </div>
+
+      <div>
+        <label for="">5) What is my state?</label>
+        <input type="radio" name="q5" value="q5a" id=""> London
+        <input type="radio" name="q5" value="q5b" id=""> Ontario
+        <input type="radio" name="q5" value="q5c" id=""> Lagos
+      </div>
+
+      <button id="quiz_submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+<script>
+quiz_submit.addEventListener('click', function(){
+  let quest1 = document.quiz.q1.value;
+  let quest2 = document.quiz.q2.value;
+  let quest3 = document.quiz.q3.value;
+  let quest4 = document.quiz.q4.value;
+  let quest5 = document.quiz.q5.value;
+
+  let score = 0;
+
+  if(quest1 == "q1b"){
+    score++
+  }
+  if(quest2 == "q2a"){
+    score++;
+  }
+  if(quest3 == "q3c"){
+    score++
+  }
+  if(quest4 == "q4b"){
+    score++;
+  }
+  if(quest5 == "q5a"){
+    score++;
+  }
+
+  document.write("Score: " + score + "/5");
+})
+
+  // LOOP
+// While Loop
+  // let start = 1;
+  // while(start <= 1000){
+  //           document.write("I am so Mrs Ennet " + start + "<br>");
+  //           start++;
+  // }
+
+  // Do While Loop
+  // let start = 1;
+  // do{
+  //   document.write("I am so Mrs Ennet " + start + "<br>");
+  //   start++;
+  // }while(start <= 1000)
+
+// For Loop
+for(start = 1; start <= 1000; start++){
+  document.write("I am so Mrs Ennet " + start + "<br>");
+}
+
+
+
+  /*
+      OUTPUT TEXT WITH JAVASCRIPT
+      Console Log
+      Document write
+      InnerHTML
+      Window alert
+  */
+
+  // console.log('Hello Planet Earth!');
+  // document.write("<h1 style='color: red;'>Hello World!</h1>");
+  // document.querySelector('#title').innerHTML = "Hello Planet Earth!";
+  // window.alert('Only for kids (below 9)');
+
+  // const mySchool = "Federal University of Technology (FUTA)";
+  // let myName = "John Bush";
+  // let myAge = 45;
+  // let myGPA = 4.2;
+  // document.write('Name: ' + myName + '<br>' + 'School: ' + '<u>' + mySchool + '</u>' + '<br>' + 'Age: ' + myAge + '<br>' + 'GPA: ' + myGPA + '<br><hr>');
+
+
+  // // mySchool = "University of Lagos";
+  // myName = "Morgan Smith";
+  // myAge = 71;
+  // myGPA = 3.5;
+  // document.write('Name: ' + myName + '<br>' + 'School: ' + mySchool + '<br>' + 'Age: ' + myAge + '<br>' + 'GPA: ' + myGPA + '<br><hr>');
+
+
+  // // mySchool = "University of Ibadan";
+  // myName = "Christ Tulker";
+  // myAge = 37;
+  // myGPA = 4.5;
+  // document.write('Name: ' + myName + '<br>' + 'School: ' + mySchool + '<br>' + 'Age: ' + myAge + '<br>' + 'GPA: ' + myGPA + '<br><hr>');
+</script>
+
+<script src="app.js"></script>
